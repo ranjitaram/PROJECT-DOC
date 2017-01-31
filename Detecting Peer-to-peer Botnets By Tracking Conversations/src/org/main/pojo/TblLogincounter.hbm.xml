@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 20, 2016 3:22:38 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="org.main.pojo.TblLogincounter" table="tbl_logincounter" catalog="db_manager" optimistic-lock="version">
+        <id name="txtId" type="string">
+            <column name="txtId" length="38" />
+            <generator class="assigned" />
+        </id>
+        <property name="txtEmailId" type="string">
+            <column name="txtEmailId" length="50" />
+        </property>
+        <property name="txtFromIp" type="string">
+            <column name="txtFromIp" length="15" />
+        </property>
+        <property name="txtLoginDate" type="timestamp">
+            <column name="txtLoginDate" length="19" />
+        </property>
+        <property name="txtUserType" type="string">
+            <column name="txtUserType" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 20, 2016 3:22:38 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="org.main.pojo.TblGroupSchedules" table="tbl_group_schedules" catalog="db_manager" optimistic-lock="version">
+        <id name="txtId" type="string">
+            <column name="txtId" length="38" />
+            <generator class="assigned" />
+        </id>
+        <property name="txtGroupId" type="string">
+            <column name="txtGroupId" length="38" />
+        </property>
+        <property name="txtSchedulesDate" type="timestamp">
+            <column name="txtSchedulesDate" length="19" />
+        </property>
+        <property name="txtSchedulesTopic" type="string">
+            <column name="txtSchedulesTopic" length="500" />
+        </property>
+        <property name="txtDiscussionTime" type="string">
+            <column name="txtDiscussionTime" length="50" not-null="true" />
+        </property>
+        <property name="txtTeacherName" type="string">
+            <column name="txtTeacherName" length="50" />
+        </property>
+        <property name="txtRemark" type="string">
+            <column name="txtRemark" length="50" />
+        </property>
+        <property name="txtIsCancled" type="char">
+            <column name="txtIsCancled" length="1" not-null="true" />
+        </property>
+        <property name="txtIsActive" type="java.lang.Character">
+            <column name="txtIsActive" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>

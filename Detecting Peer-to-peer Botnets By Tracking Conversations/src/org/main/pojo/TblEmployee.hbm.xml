@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 20, 2016 3:22:38 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="org.main.pojo.TblEmployee" table="tbl_employee" catalog="db_manager" optimistic-lock="version">
+        <id name="txtId" type="string">
+            <column name="txtId" length="38" />
+            <generator class="assigned" />
+        </id>
+        <property name="txtEmpName" type="string">
+            <column name="txtEmpName" length="50" />
+        </property>
+        <property name="txtEmpEmail" type="string">
+            <column name="txtEmpEmail" length="50" />
+        </property>
+        <property name="txtPhoneNo" type="string">
+            <column name="txtPhoneNo" length="15" />
+        </property>
+        <property name="txtMobileNo" type="string">
+            <column name="txtMobileNo" length="15" />
+        </property>
+        <property name="txtPassword" type="string">
+            <column name="txtPassword" length="15" />
+        </property>
+        <property name="txtEmployeeRole" type="string">
+            <column name="txtEmployeeRole" length="15" />
+        </property>
+        <property name="txtIsActive" type="java.lang.Character">
+            <column name="txtIsActive" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>

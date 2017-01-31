@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 20, 2016 3:22:38 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="org.main.pojo.TblOutsourceProject" table="tbl_outsource_project" catalog="db_manager" optimistic-lock="version">
+        <id name="txtId" type="string">
+            <column name="txtId" length="38" />
+            <generator class="assigned" />
+        </id>
+        <property name="txtOutsourceId" type="string">
+            <column name="txtOutsourceId" length="38" />
+        </property>
+        <property name="txtGroupId" type="string">
+            <column name="txtGroupId" length="38" not-null="true" />
+        </property>
+        <property name="txtProjectId" type="string">
+            <column name="txtProjectId" length="38" />
+        </property>
+        <property name="txtAmount" type="string">
+            <column name="txtAmount" length="50" />
+        </property>
+        <property name="txtDeliveryDate" type="string">
+            <column name="txtDeliveryDate" length="50" />
+        </property>
+        <property name="txtRemark" type="string">
+            <column name="txtRemark" length="50" />
+        </property>
+        <property name="txtCol3mark" type="string">
+            <column name="txtCol3Mark" length="50" />
+        </property>
+        <property name="txtCol4mark" type="string">
+            <column name="txtCol4Mark" length="50" />
+        </property>
+        <property name="txtCol5mark" type="string">
+            <column name="txtCol5Mark" length="50" />
+        </property>
+        <property name="txtFromIp" type="string">
+            <column name="txtFromIp" length="15" />
+        </property>
+        <property name="txtEntryDate" type="timestamp">
+            <column name="txtEntryDate" length="19" />
+        </property>
+        <property name="txtEnteredBy" type="string">
+            <column name="txtEnteredBy" length="38" />
+        </property>
+        <property name="txtUpdateDate" type="timestamp">
+            <column name="txtUpdateDate" length="19" />
+        </property>
+        <property name="txtUpdateBy" type="string">
+            <column name="txtUpdateBy" length="38" />
+        </property>
+        <property name="txtIsDelete" type="java.lang.Character">
+            <column name="txtIsDelete" length="1" />
+        </property>
+        <property name="txtIsActive" type="java.lang.Character">
+            <column name="txtIsActive" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>

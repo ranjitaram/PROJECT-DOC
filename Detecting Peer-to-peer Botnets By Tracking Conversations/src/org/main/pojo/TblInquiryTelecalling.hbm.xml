@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 20, 2016 3:22:38 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="org.main.pojo.TblInquiryTelecalling" table="tbl_inquiry_telecalling" catalog="db_manager" optimistic-lock="version">
+        <id name="txtId" type="string">
+            <column name="txtId" length="38" />
+            <generator class="assigned" />
+        </id>
+        <property name="txtInquiryId" type="string">
+            <column name="txtInquiryId" length="38" />
+        </property>
+        <property name="txtCallingSubjet" type="string">
+            <column name="txtCallingSubjet" length="500" />
+        </property>
+        <property name="txtCallingTime" type="timestamp">
+            <column name="txtCallingTime" length="19" not-null="true" />
+        </property>
+        <property name="txtCallerName" type="string">
+            <column name="txtCallerName" length="50" />
+        </property>
+        <property name="txtConversation" type="string">
+            <column name="txtConversation" length="65535" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 20, 2016 3:22:38 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="org.main.pojo.TblProject" table="tbl_project" catalog="db_manager" optimistic-lock="version">
+        <id name="txtId" type="string">
+            <column name="txtId" length="38" />
+            <generator class="assigned" />
+        </id>
+        <property name="txtTechnologyName" type="string">
+            <column name="txtTechnologyName" length="50" />
+        </property>
+        <property name="txtProjectCategory" type="string">
+            <column name="txtProjectCategory" length="200" not-null="true" />
+        </property>
+        <property name="txtProjectName" type="string">
+            <column name="txtProjectName" length="500" />
+        </property>
+        <property name="txtAbstract" type="string">
+            <column name="txtAbstract" length="65535" />
+        </property>
+        <property name="txtSynopsis" type="string">
+            <column name="txtSynopsis" length="500" />
+        </property>
+        <property name="txtIeee" type="string">
+            <column name="txtIeee" length="500" />
+        </property>
+        <property name="txtPpt" type="string">
+            <column name="txtPpt" length="500" />
+        </property>
+        <property name="txtVideo" type="string">
+            <column name="txtVideo" length="500" />
+        </property>
+        <property name="txtThesis" type="string">
+            <column name="txtThesis" length="500" />
+        </property>
+        <property name="txtFlowDiagram" type="string">
+            <column name="txtFlowDiagram" length="500" />
+        </property>
+        <property name="txtEntryDate" type="timestamp">
+            <column name="txtEntryDate" length="19" />
+        </property>
+        <property name="txtIsActive" type="java.lang.Character">
+            <column name="txtIsActive" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>

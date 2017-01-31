@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 20, 2016 3:22:38 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="org.main.pojo.TblAlgorithm" table="tbl_algorithm" catalog="db_manager" optimistic-lock="version">
+        <id name="txtId" type="string">
+            <column name="txtId" length="38" />
+            <generator class="assigned" />
+        </id>
+        <property name="txtCategoryId" type="string">
+            <column name="txtCategoryId" length="38" not-null="true" />
+        </property>
+        <property name="txtProjectCategory" type="string">
+            <column name="txtProjectCategory" length="50" />
+        </property>
+        <property name="txtAlgorithmName" type="string">
+            <column name="txtAlgorithmName" length="50" />
+        </property>
+        <property name="txtAbstract" type="string">
+            <column name="txtAbstract" length="65535" />
+        </property>
+        <property name="txtRemark" type="string">
+            <column name="txtRemark" length="500" />
+        </property>
+        <property name="txtPdf" type="string">
+            <column name="txtPDF" length="500" />
+        </property>
+        <property name="txtPpt" type="string">
+            <column name="txtPPT" length="500" />
+        </property>
+        <property name="txtDoc" type="string">
+            <column name="txtDOC" length="500" />
+        </property>
+        <property name="txtIsActive" type="char">
+            <column name="txtIsActive" length="1" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

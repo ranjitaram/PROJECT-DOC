@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 20, 2016 3:22:38 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="org.main.pojo.TblGroupAccount" table="tbl_group_account" catalog="db_manager" optimistic-lock="version">
+        <id name="txtId" type="string">
+            <column name="txtId" length="38" />
+            <generator class="assigned" />
+        </id>
+        <property name="txtGroupId" type="string">
+            <column name="txtGroupId" length="38" />
+        </property>
+        <property name="txtGroupCode" type="string">
+            <column name="txtGroupCode" length="10" />
+        </property>
+        <property name="txtProjectId" type="string">
+            <column name="txtProjectId" length="38" />
+        </property>
+        <property name="txtPaidAmt" type="java.lang.Integer">
+            <column name="txtPaidAmt" />
+        </property>
+        <property name="txtRemark" type="string">
+            <column name="txtRemark" length="250" />
+        </property>
+        <property name="txtEntryDate" type="timestamp">
+            <column name="txtEntryDate" length="19" />
+        </property>
+        <property name="txtEnteredBy" type="string">
+            <column name="txtEnteredBy" length="38" />
+        </property>
+        <property name="txtIsActive" type="java.lang.Character">
+            <column name="txtIsActive" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>

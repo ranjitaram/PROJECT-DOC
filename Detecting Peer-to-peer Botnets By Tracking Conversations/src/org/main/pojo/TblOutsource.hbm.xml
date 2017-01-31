@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 20, 2016 3:22:38 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="org.main.pojo.TblOutsource" table="tbl_outsource" catalog="db_manager" optimistic-lock="version">
+        <id name="txtId" type="string">
+            <column name="txtId" length="38" />
+            <generator class="assigned" />
+        </id>
+        <property name="txtCompanyName" type="string">
+            <column name="txtCompanyName" length="50" />
+        </property>
+        <property name="txtCompanyEmail" type="string">
+            <column name="txtCompanyEmail" length="50" />
+        </property>
+        <property name="txtCompanyPhoneNo" type="string">
+            <column name="txtCompanyPhoneNo" length="15" />
+        </property>
+        <property name="txtCompanyMobileNo" type="string">
+            <column name="txtCompanyMobileNo" length="15" />
+        </property>
+        <property name="txtCompanyCity" type="string">
+            <column name="txtCompanyCity" length="20" />
+        </property>
+        <property name="txtCompanyState" type="string">
+            <column name="txtCompanyState" length="20" />
+        </property>
+        <property name="txtCompanyAddress" type="string">
+            <column name="txtCompanyAddress" length="50" />
+        </property>
+        <property name="txtCompanyLandMark" type="string">
+            <column name="txtCompanyLandMark" length="50" />
+        </property>
+        <property name="txtCompanyPinCode" type="string">
+            <column name="txtCompanyPinCode" length="6" />
+        </property>
+        <property name="txtCompanyFounderName" type="string">
+            <column name="txtCompanyFounderName" length="50" />
+        </property>
+        <property name="txtCompanyFounderEmail" type="string">
+            <column name="txtCompanyFounderEmail" length="50" />
+        </property>
+        <property name="txtCompanyEmployee" type="string">
+            <column name="txtCompanyEmployee" length="38" />
+        </property>
+        <property name="txtFromIp" type="string">
+            <column name="txtFromIp" length="15" />
+        </property>
+        <property name="txtEntryDate" type="timestamp">
+            <column name="txtEntryDate" length="19" />
+        </property>
+        <property name="txtEnteredBy" type="string">
+            <column name="txtEnteredBy" length="38" />
+        </property>
+        <property name="txtUpdateDate" type="timestamp">
+            <column name="txtUpdateDate" length="19" />
+        </property>
+        <property name="txtUpdateBy" type="string">
+            <column name="txtUpdateBy" length="38" />
+        </property>
+        <property name="txtIsDelete" type="java.lang.Character">
+            <column name="txtIsDelete" length="1" />
+        </property>
+        <property name="txtIsActive" type="java.lang.Character">
+            <column name="txtIsActive" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>

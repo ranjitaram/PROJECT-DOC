@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/db_manager?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">root</property>
+    <mapping resource="org/main/pojo/TblLogincounter.hbm.xml"/>
+    <mapping resource="org/main/pojo/TblGroupQueriesAnswer.hbm.xml"/>
+    <mapping resource="org/main/pojo/TblOutsourceProject.hbm.xml"/>
+    <mapping resource="org/main/pojo/TblGroupAccount.hbm.xml"/>
+    <mapping resource="org/main/pojo/TblGroupSchedules.hbm.xml"/>
+    <mapping resource="org/main/pojo/TblGroupQueries.hbm.xml"/>
+    <mapping resource="org/main/pojo/TblProject.hbm.xml"/>
+    <mapping resource="org/main/pojo/TblInquiryTelecalling.hbm.xml"/>
+    <mapping resource="org/main/pojo/TblOutsource.hbm.xml"/>
+    <mapping resource="org/main/pojo/TblEmployee.hbm.xml"/>
+    <mapping resource="org/main/pojo/TblJobalert.hbm.xml"/>
+    <mapping resource="org/main/pojo/TblGroupTelecalling.hbm.xml"/>
+    <mapping resource="org/main/pojo/TblAlgorithm.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>
